@@ -1,0 +1,32 @@
+.milieu{
+  text-align: center;
+}
+
+input[type="text"]{
+  height: 100px;
+  width: 600px;
+  font-size: 2em;
+  text-align:center
+}
+input[type="button"]{
+  height: 75px;
+  width: 555px;
+  font-size: 1.5em;
+}
+li
+{
+  list-style-type: none;
+}
+h1{
+  font-size: 4em;
+  color:blue
+}
+a{
+  font-size: 1.5em
+}
+p{
+  font-size: 1.5em
+}
+.rep{
+ display: flex
+}
