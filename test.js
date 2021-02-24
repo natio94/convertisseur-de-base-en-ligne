@@ -5,7 +5,7 @@ function dectobin() {
  if (Number.isNaN(nb_de_depart_int)){
 	alert("Ceci n'est pas un nombre décimal. Veuillez le changer.")
  }else{
-	document.getElementsByClassName('rep').innerHTML = "Le nombre "+nb_de_depart+" en décimal équivaut à "+nb_binaire+" en binaire.";
+	document.querySelector("rep").innerHTML = "Le nombre "+nb_de_depart+" en décimal équivaut à "+nb_binaire+" en binaire.";
  }
 }
 
@@ -17,9 +17,7 @@ function strtobin() {
 	}else{
 		str_de_depart_dec = Number.parseInt(str_de_depart, 36)
 		let str_binaire = (str_de_depart_dec.toString(2))
-		let para = document.createElement("p");
-		para.textContent = "\""+str_de_depart+"\" équivaut à "+str_binaire+" en binaire."
-		document.body.appendChild(para)
+		document.getElementById("rep").innerHTML = "\""+str_de_depart+"\" équivaut à "+str_binaire+" en binaire."
 	}
  }
  function hexatobin() {
@@ -29,9 +27,7 @@ function strtobin() {
  if (Number.isNaN(nb_de_depart_int)){
 	 alert("Ceci n'est pas un nombre hexadécimal. Veuillez le changer.")
  }else{
-	 let para = document.createElement('p');
- 	 para.textContent = "Le nombre "+nb_de_depart+" en héxadécimal équivaut à "+nb_binaire+" en binaire."
-	 document.body.appendChild(para)
+	 document.getElementById("rep").innerHTML = "Le nombre "+nb_de_depart+" en héxadécimal équivaut à "+nb_binaire+" en binaire."
  }
 }
 
@@ -44,9 +40,7 @@ function bintodec() {
  if(Number.isNaN(nb_decimal)){
 	alert("Ceci n'est pas un nombre binaire. Veuillez le changer.")
  }else{
-	 let para = document.createElement('p');
-	 para.textContent = "Le nombre "+nb_de_depart+" en binaire "+" équivaut à "+nb_decimal+" en décimal."
-	 document.body.appendChild(para)
+   document.getElementById("rep").innerHTML = "Le nombre "+nb_de_depart+" en binaire "+" équivaut à "+nb_decimal+" en décimal."
  }
 }
 function hexatodec() {
@@ -55,9 +49,7 @@ function hexatodec() {
  if(Number.isNaN(nb_decimal)){
 	alert("Ceci n'est pas un nombre hexadécimal. Veuillez le changer.")
  }else{
-	 let para = document.createElement('p');
-	 para.textContent = "Le nombre "+nb_de_depart+"en héxadecimal équivaut à "+nb_decimal+" en décimal."
-	 document.body.appendChild(para)
+  	document.getElementById("rep").innerHTML = "Le nombre "+nb_de_depart+"en héxadecimal équivaut à "+nb_decimal+" en décimal."
  }
 }
 function strtodec() {
@@ -66,9 +58,7 @@ function strtodec() {
  if(Number.isNaN(nb_decimal)){
 	alert("Ceci n'est pas un texte. Veuillez le changer.")
  }else{
-	 let para = document.createElement('p');
-	 para.textContent = "Le nombre "+nb_de_depart+"en décimal équivaut à "+nb_decimal+" en décimal."
-	 document.body.appendChild(para)
+	 document.getElementById("rep").innerHTML = "Le nombre "+nb_de_depart+"en décimal équivaut à "+nb_decimal+" en décimal."
  }
 }
 
