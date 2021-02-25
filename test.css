@@ -29,6 +29,8 @@ a{
 }
 p{
   font-size: 1.5em;
+  margin-left: 5em;
+  margin-right:5em;
 }
 #rep{
  display : flex ;
@@ -40,4 +42,7 @@ p{
   align-items:left;
   justify-content:left;
   display:flex;
+}
+.petit{
+  font-size: 1em
 }
