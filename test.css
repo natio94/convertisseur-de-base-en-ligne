@@ -32,7 +32,12 @@ p{
 }
 #rep{
  display : flex ;
- float: left;
+ float: top left;
  align-items: left;
  justify-content: left;
+}
+.gauche{
+  align-items:left;
+  justify-content:left;
+  display:flex;
 }

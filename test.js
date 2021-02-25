@@ -5,7 +5,7 @@ function dectobin() {
  if (Number.isNaN(nb_de_depart_int)){
 	alert("Ceci n'est pas un nombre décimal. Veuillez le changer.")
  }else{
-	document.querySelector("rep").innerHTML = "Le nombre "+nb_de_depart+" en décimal équivaut à "+nb_binaire+" en binaire.";
+	document.querySelector("#rep").innerHTML = "Le nombre "+nb_de_depart+" en décimal équivaut à "+nb_binaire+" en binaire.";
  }
 }
 
