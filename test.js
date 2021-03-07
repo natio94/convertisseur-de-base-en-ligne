@@ -74,9 +74,8 @@ function bintostr() {
 	if(Number.isNaN(str_de_depart_dec)){
   	alert("Ceci n'est pas un nombre binaire. Veuillez le changer.")
 	}else{
-	 let para = document.createElement('p');
-   para.textContent = "Le nombre "+str_de_depart+" en binaire équivaut à \""+binaire_str+"\"."
-	 document.body.appendChild(para)
+  document.querySelector("#rep").innerHTML ="Le nombre "+str_de_depart+" en binaire équivaut à \""+binaire_str+"\"."
+
 }
 }
 function dectostr() {
@@ -86,9 +85,7 @@ function dectostr() {
 	if(Number.isNaN(str_de_depart_dec)){
   	alert("Ceci n'est pas un nombre binaire. Veuillez le changer.")
 	}else{
-	 let para = document.createElement('p');
-   para.textContent = "Le nombre "+str_de_depart+" en decimal équivaut à \""+binaire_str+"\"."
-	 document.body.appendChild(para)
+		document.querySelector("#rep").innerHTML ="Le nombre "+str_de_depart+" en decimal équivaut à \""+binaire_str+"\"."
 }
 }
 function hexatostr() {
@@ -98,9 +95,7 @@ function hexatostr() {
 	if(Number.isNaN(str_de_depart_dec)){
   	alert("Ceci n'est pas un nombre héxadécimal. Veuillez le changer.")
 	}else{
-	 let para = document.createElement('p');
-   para.textContent = "Le nombre "+str_de_depart+" en hexadecimal équivaut à \""+binaire_str+"\"."
-	 document.body.appendChild(para)
+		document.querySelector("#rep").innerHTML ="Le nombre "+str_de_depart+" en hexadecimal équivaut à \""+binaire_str+"\"."
 }
 }
 
@@ -116,9 +111,7 @@ function bintohexa() {
  if(Number.isNaN(nb_decimal)){
 	alert("Ceci n'est pas un nombre binaire. Veuillez le changer.")
  }else{
-	 let para = document.createElement('p');
-	 para.textContent = "Le nombre "+nb_decimal+" en binaire "+" équivaut à "+nb_hexadecimal+" en héxadécimal."
-	 document.body.appendChild(para)
+	 document.querySelector("#rep").innerHTML ="Le nombre "+nb_decimal+" en binaire "+" équivaut à "+nb_hexadecimal+" en héxadécimal."
  }
 }
 function dechexa() {
@@ -132,8 +125,33 @@ function dectohexa() {
  if(Number.isNaN(nb_decimal)){
 	alert("Ceci n'est pas un nombre. Veuillez le changer.")
  }else{
-	let para = document.createElement('p');
-	para.textContent = "Le nombre "+nb_decimal+" équivaut à "+nb_hexadecimal+" en héxadécimal."
-	document.body.appendChild(para)
+	document.querySelector("#rep").innerHTML = "Le nombre "+nb_decimal+" équivaut à "+nb_hexadecimal+" en héxadécimal."
  }
+}
+//Décommenter le texte suivant pour faire apparaitre une fonctionnalité secrète
+let clic=0
+let i = 0
+let clicParSeconde
+function compteurDeClic() {
+	clicParSeconde=clic/10
+	while (i++ < 1) {
+		setTimeout('afficheResultat()', 10000)
+
+	}
+}
+function ajouterUnLien() {
+	let nouveauLien = document.createElement("a");
+	nouveauLien.innerText = "Bravo, vous avez trouvé le lien pour la page secrète !";
+	nouveauLien.setAttribute("href", "page_secrète.html");
+	nouveauLien.setAttribute("target","_blank")
+	document.body.appendChild(nouveauLien);
+}
+function afficheResultat() {
+  alert("Vous avez cliquer "+clic+" fois en 10 secondes et environ "+clicParSeconde+" fois par seconde")
+	clic=0
+	i = 0
+	clicParSeconde=0
+	}
+if (document.getElementById("test").value == 	112){
+	 ajouterUnLien()
 }
