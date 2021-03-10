@@ -1,8 +1,5 @@
 .milieu{
   text-align: center;
-  align-items: center;
-  justify-content: center;
-  clear:both;
 }
 
 input[type="text"]{
@@ -35,10 +32,9 @@ p{
   margin-right:5em;
 }
 #rep{
- display : flex ;
- float: top left;
- align-items: left;
- justify-content: left;
+ position:fixed;
+ left:0px;
+ top:310px
 }
 .gauche{
   align-items:left;
@@ -47,4 +43,9 @@ p{
 }
 .petit{
   font-size: 1em
+}
+.logo{
+  position: fixed;
+  bottom:15px;
+  right:15px;
 }

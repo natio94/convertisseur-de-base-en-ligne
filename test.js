@@ -128,7 +128,6 @@ function dectohexa() {
 	document.querySelector("#rep").innerHTML = "Le nombre "+nb_decimal+" équivaut à "+nb_hexadecimal+" en héxadécimal."
  }
 }
-//Décommenter le texte suivant pour faire apparaitre une fonctionnalité secrète
 let clic=0
 let i = 0
 let clicParSeconde
@@ -147,11 +146,11 @@ function ajouterUnLien() {
 	document.body.appendChild(nouveauLien);
 }
 function afficheResultat() {
-  alert("Vous avez cliquer "+clic+" fois en 10 secondes et environ "+clicParSeconde+" fois par seconde")
+  alert("Vous avez cliqué "+clic+" fois en 10 secondes et environ "+clicParSeconde+" fois par seconde")
 	clic=0
 	i = 0
 	clicParSeconde=0
 	}
-if (document.getElementById("test").value == 	112){
+if (document.getElementById("test").value == 	154){
 	 ajouterUnLien()
 }
